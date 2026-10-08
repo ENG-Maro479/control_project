@@ -1,5 +1,5 @@
 # control_project
-#Student information
+# Student information
 
 Name: Omar Mohamed Mahmoud
 
