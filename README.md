@@ -186,6 +186,17 @@ cruise controller on.
 | Session 1, lap 1 | 303.30 | 1.697 / 2.176 / 8.755 | 1.53 / 13.14 | 464.8 |
 | Session 2, lap 1 | 264.90 | 0.782 / 1.308 / 5.021 | 1.72 / 3.99 | 455.6 |
 | Session 2, lap 2 | 149.00 | 0.920 / 1.245 / 3.938 | 3.02 / 5.19 | 449.4 |
+
+The first lap of every session contains the idle time before the first command, so its time and mean speed are
+not representative.
+
+## controllers comparison
+
+* **lateral PID** is the simplest and cheapest controller, but it is reactive, which means it only reacts to the error that already happened and existed (it makes an error, then corrects it). Also, it has no vision for the road ahead, so it had the worst tracking among the controllers (mean CTE ≈ 0.40 m, max 3.08 m).
+
+* **pure pursuit** it has the best teaking and the fastest laps (mean CTE ≈ 0.042 m, 72 s per lap). its 
+
+
  
 
 
