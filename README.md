@@ -206,9 +206,73 @@ not representative.
 
 * **MPC vs. lateral PID**: A feedback controller (lateral PID) only reacts after an error has appeared, so it always has a bigger error; its performance depends on its tuning. While the MPC predicts how the car will be after a while and chooses the best commands, it applies only aplly the first command and calculates again.
 
-* **  
+* **versus pure pursuit** pure pursuit looks at a single point, treats steering as a geometric problem and has no steering limit. MPC uses the vehicle model over a specific time and gives weights (costs) to heading error, speed, lateral error and steering rate.
 
+* ** Why MPC was worse than pure pursuit: ** This could be because of the many zigzag reference points or a short horizon (10 steps), so MPC could be better if the path has fewer turns or its tuning is changed.
 
+ 
+
+## Reproduction guide
+ 
+Tested on Ubuntu 22.04 (WSL2 on Windows) with ROS 2 Humble.
+ 
+```bash
+# 1. Dependencies
+source /opt/ros/humble/setup.bash
+sudo apt update && sudo apt install -y python3-colcon-common-extensions python3-numpy python3-scipy \
+  ros-humble-robot-state-publisher ros-humble-rviz2 ros-humble-xacro \
+  ros-humble-teleop-twist-keyboard ros-humble-plotjuggler-ros ros-humble-rqt-plot
+ 
+# 2. Build
+cd /path/to/workspace        # the folder containing src/ with the three packages
+colcon build --symlink-install
+source install/setup.bash
+```
+ 
+**Run each mode** (one launch at a time; stop the previous one with Ctrl+C first):
+ 
+| Mode | Command |
+|---|---|
+| Base simulation | `ros2 launch bicycle_sim bicycle_sim.launch.py` |
+| Manual teleoperation | `ros2 launch bicycle_sim bicycle_sim.launch.py controller:=teleop use_cruise_control:=true`, then `ros2 run teleop_twist_keyboard teleop_twist_keyboard` |
+| Lateral PID | `ros2 launch bicycle_sim bicycle_sim.launch.py controller:=lateral_pid` |
+| Pure Pursuit | `ros2 launch bicycle_sim bicycle_sim.launch.py controller:=pure_pursuit` |
+| MPC | `ros2 launch bicycle_sim bicycle_sim.launch.py controller:=mpc` |
+ 
+Add `rviz:=false` to run without the RViz window. The lap analyzer prints a summary banner after every lap.
+ 
+**Direct actuator test (Milestone 2):**
+ 
+```bash
+ros2 topic pub -r 10 /throttle std_msgs/msg/Float32 "{data: 0.5}"
+ros2 topic pub -r 10 /steer std_msgs/msg/Float32 "{data: 0.30}"
+```
+ 
+**Live plots:**
+ 
+```bash
+ros2 run plotjuggler plotjuggler
+ros2 run rqt_plot rqt_plot /telemetry/cte /telemetry/speed
+```
+ 
+**Reproducing the benchmark.** Make sure `ros2 node list` is empty before every run (leftover processes from a
+previous run corrupt the lap statistics), run a mode for at least three laps, and read the lap banners printed in the
+launch terminal.
+ 
+### Known issues and tips
+ 
+* Stale processes: after a crash, kill leftovers (`pkill -f "bicycle_ws/install"`) and check `ros2 node list`.
+* The lap timer starts at the first `/state` message, so start the controller before the simulation, or
+  ignore the first lap.
+* On WSL2, RViz may fail to open after a long session; `wsl --shutdown` or `LIBGL_ALWAYS_SOFTWARE=1` helped.
+## Repository layout
+ 
+```
+bicycle_sim/          vehicle model, simulator node, URDF, RViz config, launch file
+bicycle_control/      teleop bridge, PID, velocity profiler, Lateral PID, Pure Pursuit, MPC, controller node
+track_environment/    track CSV, path generation, lap analyzer
+assets/               images used in this README
+```
 
 
  
