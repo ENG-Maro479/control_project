@@ -200,9 +200,14 @@ not representative.
 
 * **Manual driving** was the worst at all and; it had the largest errors and exited the path many times.
 
-**Important note: ** the MPC and the pure pursuit didn't have the same speed, so I made another test in which the pure pursuit drive with 4m/s, but pure pursuit also tracked the track better than MPC.
+**Important note: ** The MPC and the pure pursuit didn't have the same speed, so I made another test in which the pure pursuit drive with 4m/s, but pure pursuit also tracked the track better than MPC.
 
 ## Why MPC should track better than pure pursuit and lateral PID 
+
+* **MPC vs. lateral PID**: A feedback controller (lateral PID) only reacts after an error has appeared, so it always has a bigger error; its performance depends on its tuning. While the MPC predicts how the car will be after a while and chooses the best commands, it applies only aplly the first command and calculates again.
+
+* **  
+
 
 
 
