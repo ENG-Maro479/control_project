@@ -192,9 +192,18 @@ not representative.
 
 ## controllers comparison
 
-* **lateral PID** is the simplest and cheapest controller, but it is reactive, which means it only reacts to the error that already happened and existed (it makes an error, then corrects it). Also, it has no vision for the road ahead, so it had the worst tracking among the controllers (mean CTE ≈ 0.40 m, max 3.08 m).
+* **lateral PID** is the simplest and cheapest controller, but it is reactive, which means it only reacts to the error that has already happened and exists (it makes an error, then corrects it). Also, it has no vision for the road ahead, so it had the worst tracking among the controllers (mean CTE ≈ 0.40 m, max 3.08 m).
 
-* **pure pursuit** it has the best teaking and the fastest laps (mean CTE ≈ 0.042 m, 72 s per lap). its 
+* **pure pursuit** has the best tracking and the fastest laps (mean CTE ≈ 0.042 m, 72 s per lap). Its lookahead point averages out the waypoint noise and gives a smooth movement along the path. Its disadvantage is that it is purely geometric, so it ignores the dynamics and actuator limits.
+
+* **MPC** is the most capable in theory and the most expensive to compute. It had the lowest maximum CTE. On the other hand, its mean and RMS error were higher than pure pursuit even when they had the same speed 4m/s (from the table above).
+
+* **Manual driving** was the worst at all and; it had the largest errors and exited the path many times.
+
+**Important note: ** the MPC and the pure pursuit didn't have the same speed, so I made another test in which the pure pursuit drive with 4m/s, but pure pursuit also tracked the track better than MPC.
+
+## Why MPC should track better than pure pursuit and lateral PID 
+
 
 
  
