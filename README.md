@@ -239,7 +239,7 @@ Simulation is very important in testing the controller of autonomous cars. That 
 
 We have two simulators which are used in simulations and they are Gazebo and MVSim. Gazebo is a simulating environment where the vehicle and the environment could be tested. MVSim is as focused more on mobile robots and many vehicles simulation. We could also use some sensors like lidars, cameras and IMU to get the data from the environment to make the car drive fully automated.
 
-[IMAGE: optional screenshot for this topic — save it as `assets/gazebo.png`]
+<img src="assets/gazebo.png" width="45%" /> <img src="assets/rviz.png" width="45%" />
 
 ## 3. Nav2 MPPI control
 
@@ -247,7 +247,7 @@ MPPI is a predictive local controller that generate many trajectories by samplin
 
 The difference between MPPI and the MPC is that MPC uses mathematical optimization problem to solve the best control sequence. MPPI it will sample many trajectories, simulate them and give each of them a cost and uses the costs of the sampled trajectories to calculate an improved control sequence, then applies the current control command and repeats the process.
 
-[IMAGE: optional screenshot for this topic — save it as `assets/mppi.png`]
+
 
 # Reproduction guide
 
