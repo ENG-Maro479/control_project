@@ -1,0 +1,4 @@
+[console_scripts]
+lap_analyzer = track_environment.lap_analyzer:main
+path_gen = track_environment.path_gen:main
+

@@ -1,0 +1,4 @@
+[console_scripts]
+controller = bicycle_control.controller_node:main
+teleop_bridge = bicycle_control.teleop_bridge:main
+

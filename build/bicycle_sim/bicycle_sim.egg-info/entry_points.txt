@@ -1,0 +1,4 @@
+[console_scripts]
+kinematic_bicycle = bicycle_sim.sim_node:main
+sim_node = bicycle_sim.sim_node:main
+
