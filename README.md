@@ -311,4 +311,4 @@ assets/               images used in this README
 
 # Video
 
-[LINK TO THE 3 TO 5 MINUTE VIDEO]
+#the video is in the assets folder 
