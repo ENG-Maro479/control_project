@@ -1,0 +1,28 @@
+[1.674s] Invoking command in '/home/eng_omar/bicycle_ws/build/track_environment': PYTHONPATH=/home/eng_omar/bicycle_ws/build/track_environment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eng_omar/bicycle_ws/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eng_omar/bicycle_ws/build/track_environment/build --no-deps symlink_data
+[1.969s] running develop
+[2.121s] running egg_info
+[2.121s] creating track_environment.egg-info
+[2.121s] writing track_environment.egg-info/PKG-INFO
+[2.122s] writing dependency_links to track_environment.egg-info/dependency_links.txt
+[2.122s] writing entry points to track_environment.egg-info/entry_points.txt
+[2.123s] writing requirements to track_environment.egg-info/requires.txt
+[2.123s] writing top-level names to track_environment.egg-info/top_level.txt
+[2.123s] writing manifest file 'track_environment.egg-info/SOURCES.txt'
+[2.124s] reading manifest file 'track_environment.egg-info/SOURCES.txt'
+[2.125s] writing manifest file 'track_environment.egg-info/SOURCES.txt'
+[2.127s] running build_ext
+[2.127s] Creating /home/eng_omar/bicycle_ws/install/track_environment/lib/python3.10/site-packages/track-environment.egg-link (link to .)
+[2.128s] Installing lap_analyzer script to /home/eng_omar/bicycle_ws/install/track_environment/lib/track_environment
+[2.129s] Installing path_gen script to /home/eng_omar/bicycle_ws/install/track_environment/lib/track_environment
+[2.129s] 
+[2.129s] Installed /home/eng_omar/bicycle_ws/build/track_environment
+[2.129s] running symlink_data
+[2.129s] creating /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index
+[2.129s] creating /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index/resource_index
+[2.130s] creating /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index/resource_index/packages
+[2.130s] symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/resource/track_environment -> /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index/resource_index/packages
+[2.130s] symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/package.xml -> /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment
+[2.130s] creating /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment/tracks
+[2.131s] symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/tracks/centerline_0.csv -> /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment/tracks
+[2.131s] symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/tracks/random_track0.csv -> /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment/tracks
+[2.164s] Invoked command in '/home/eng_omar/bicycle_ws/build/track_environment' returned '0': PYTHONPATH=/home/eng_omar/bicycle_ws/build/track_environment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eng_omar/bicycle_ws/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eng_omar/bicycle_ws/build/track_environment/build --no-deps symlink_data

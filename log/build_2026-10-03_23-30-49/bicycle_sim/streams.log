@@ -1,0 +1,31 @@
+[1.359s] Invoking command in '/home/eng_omar/bicycle_ws/build/bicycle_sim': AMENT_PREFIX_PATH=/home/eng_omar/bicycle_ws/install/track_environment:/home/eng_omar/bicycle_ws/install/bicycle_sim:/home/eng_omar/bicycle_ws/install/bicycle_control:/home/eng_omar/install/shapes:/home/eng_omar/install/my_pkg:/home/eng_omar/ros_ws/install/my_pkg:/opt/ros/humble PYTHONPATH=/home/eng_omar/bicycle_ws/build/bicycle_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eng_omar/bicycle_ws/install/bicycle_sim/lib/python3.10/site-packages:/home/eng_omar/bicycle_ws/build/track_environment:/home/eng_omar/bicycle_ws/install/track_environment/lib/python3.10/site-packages:/home/eng_omar/bicycle_ws/build/bicycle_sim:/home/eng_omar/bicycle_ws/install/bicycle_sim/lib/python3.10/site-packages:/home/eng_omar/bicycle_ws/build/bicycle_control:/home/eng_omar/bicycle_ws/install/bicycle_control/lib/python3.10/site-packages:/home/eng_omar/install/shapes/lib/python3.10/site-packages:/home/eng_omar/install/my_pkg/lib/python3.10/site-packages:/home/eng_omar/install/f_pkg/lib/python3.10/site-packages:/home/eng_omar/install/f_[kg/lib/python3.10/site-packages:/home/eng_omar/ros_ws/install/my_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eng_omar/bicycle_ws/build/bicycle_sim/build --no-deps symlink_data
+[1.647s] running develop
+[1.805s] running egg_info
+[1.805s] creating bicycle_sim.egg-info
+[1.805s] writing bicycle_sim.egg-info/PKG-INFO
+[1.805s] writing dependency_links to bicycle_sim.egg-info/dependency_links.txt
+[1.806s] writing entry points to bicycle_sim.egg-info/entry_points.txt
+[1.806s] writing requirements to bicycle_sim.egg-info/requires.txt
+[1.806s] writing top-level names to bicycle_sim.egg-info/top_level.txt
+[1.807s] writing manifest file 'bicycle_sim.egg-info/SOURCES.txt'
+[1.808s] reading manifest file 'bicycle_sim.egg-info/SOURCES.txt'
+[1.809s] writing manifest file 'bicycle_sim.egg-info/SOURCES.txt'
+[1.810s] running build_ext
+[1.810s] Creating /home/eng_omar/bicycle_ws/install/bicycle_sim/lib/python3.10/site-packages/bicycle-sim.egg-link (link to .)
+[1.811s] Installing kinematic_bicycle script to /home/eng_omar/bicycle_ws/install/bicycle_sim/lib/bicycle_sim
+[1.812s] Installing sim_node script to /home/eng_omar/bicycle_ws/install/bicycle_sim/lib/bicycle_sim
+[1.812s] 
+[1.812s] Installed /home/eng_omar/bicycle_ws/build/bicycle_sim
+[1.812s] running symlink_data
+[1.813s] creating /home/eng_omar/bicycle_ws/install/bicycle_sim/share/ament_index
+[1.813s] creating /home/eng_omar/bicycle_ws/install/bicycle_sim/share/ament_index/resource_index
+[1.813s] creating /home/eng_omar/bicycle_ws/install/bicycle_sim/share/ament_index/resource_index/packages
+[1.813s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/resource/bicycle_sim -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/ament_index/resource_index/packages
+[1.814s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/package.xml -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim
+[1.814s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/launch/kinematic_bicycle.launch.py -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim
+[1.814s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/launch/bicycle_sim.launch.py -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim
+[1.814s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/launch/bicycle.rviz -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim
+[1.814s] creating /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim/urdf
+[1.815s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/urdf/racecar.xacro -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim/urdf
+[1.815s] symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_sim/urdf/racecar.urdf -> /home/eng_omar/bicycle_ws/install/bicycle_sim/share/bicycle_sim/urdf
+[1.845s] Invoked command in '/home/eng_omar/bicycle_ws/build/bicycle_sim' returned '0': AMENT_PREFIX_PATH=/home/eng_omar/bicycle_ws/install/track_environment:/home/eng_omar/bicycle_ws/install/bicycle_sim:/home/eng_omar/bicycle_ws/install/bicycle_control:/home/eng_omar/install/shapes:/home/eng_omar/install/my_pkg:/home/eng_omar/ros_ws/install/my_pkg:/opt/ros/humble PYTHONPATH=/home/eng_omar/bicycle_ws/build/bicycle_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eng_omar/bicycle_ws/install/bicycle_sim/lib/python3.10/site-packages:/home/eng_omar/bicycle_ws/build/track_environment:/home/eng_omar/bicycle_ws/install/track_environment/lib/python3.10/site-packages:/home/eng_omar/bicycle_ws/build/bicycle_sim:/home/eng_omar/bicycle_ws/install/bicycle_sim/lib/python3.10/site-packages:/home/eng_omar/bicycle_ws/build/bicycle_control:/home/eng_omar/bicycle_ws/install/bicycle_control/lib/python3.10/site-packages:/home/eng_omar/install/shapes/lib/python3.10/site-packages:/home/eng_omar/install/my_pkg/lib/python3.10/site-packages:/home/eng_omar/install/f_pkg/lib/python3.10/site-packages:/home/eng_omar/install/f_[kg/lib/python3.10/site-packages:/home/eng_omar/ros_ws/install/my_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eng_omar/bicycle_ws/build/bicycle_sim/build --no-deps symlink_data

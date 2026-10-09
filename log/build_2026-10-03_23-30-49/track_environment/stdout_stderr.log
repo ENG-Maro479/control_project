@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating track_environment.egg-info
+writing track_environment.egg-info/PKG-INFO
+writing dependency_links to track_environment.egg-info/dependency_links.txt
+writing entry points to track_environment.egg-info/entry_points.txt
+writing requirements to track_environment.egg-info/requires.txt
+writing top-level names to track_environment.egg-info/top_level.txt
+writing manifest file 'track_environment.egg-info/SOURCES.txt'
+reading manifest file 'track_environment.egg-info/SOURCES.txt'
+writing manifest file 'track_environment.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eng_omar/bicycle_ws/install/track_environment/lib/python3.10/site-packages/track-environment.egg-link (link to .)
+Installing lap_analyzer script to /home/eng_omar/bicycle_ws/install/track_environment/lib/track_environment
+Installing path_gen script to /home/eng_omar/bicycle_ws/install/track_environment/lib/track_environment
+
+Installed /home/eng_omar/bicycle_ws/build/track_environment
+running symlink_data
+creating /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index
+creating /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index/resource_index
+creating /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index/resource_index/packages
+symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/resource/track_environment -> /home/eng_omar/bicycle_ws/install/track_environment/share/ament_index/resource_index/packages
+symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/package.xml -> /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment
+creating /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment/tracks
+symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/tracks/centerline_0.csv -> /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment/tracks
+symbolically linking /home/eng_omar/bicycle_ws/build/track_environment/tracks/random_track0.csv -> /home/eng_omar/bicycle_ws/install/track_environment/share/track_environment/tracks

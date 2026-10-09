@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating bicycle_control.egg-info
+writing bicycle_control.egg-info/PKG-INFO
+writing dependency_links to bicycle_control.egg-info/dependency_links.txt
+writing entry points to bicycle_control.egg-info/entry_points.txt
+writing requirements to bicycle_control.egg-info/requires.txt
+writing top-level names to bicycle_control.egg-info/top_level.txt
+writing manifest file 'bicycle_control.egg-info/SOURCES.txt'
+reading manifest file 'bicycle_control.egg-info/SOURCES.txt'
+writing manifest file 'bicycle_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eng_omar/bicycle_ws/install/bicycle_control/lib/python3.10/site-packages/bicycle-control.egg-link (link to .)
+Installing controller script to /home/eng_omar/bicycle_ws/install/bicycle_control/lib/bicycle_control
+Installing teleop_bridge script to /home/eng_omar/bicycle_ws/install/bicycle_control/lib/bicycle_control
+
+Installed /home/eng_omar/bicycle_ws/build/bicycle_control
+running symlink_data
+creating /home/eng_omar/bicycle_ws/install/bicycle_control/share/ament_index
+creating /home/eng_omar/bicycle_ws/install/bicycle_control/share/ament_index/resource_index
+creating /home/eng_omar/bicycle_ws/install/bicycle_control/share/ament_index/resource_index/packages
+symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_control/resource/bicycle_control -> /home/eng_omar/bicycle_ws/install/bicycle_control/share/ament_index/resource_index/packages
+symbolically linking /home/eng_omar/bicycle_ws/build/bicycle_control/package.xml -> /home/eng_omar/bicycle_ws/install/bicycle_control/share/bicycle_control

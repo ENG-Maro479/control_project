@@ -1,0 +1,9 @@
+source;share/track_environment/hook/pythonpath.ps1
+source;share/track_environment/hook/pythonpath.dsv
+source;share/track_environment/hook/pythonpath.sh
+source;share/track_environment/hook/ament_prefix_path.ps1
+source;share/track_environment/hook/ament_prefix_path.dsv
+source;share/track_environment/hook/ament_prefix_path.sh
+source;../../build/track_environment/share/track_environment/hook/pythonpath_develop.ps1
+source;../../build/track_environment/share/track_environment/hook/pythonpath_develop.dsv
+source;../../build/track_environment/share/track_environment/hook/pythonpath_develop.sh
